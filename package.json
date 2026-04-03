@@ -1,0 +1,19 @@
+{
+  "name": "acceron-group-website",
+  "version": "1.0.0",
+  "description": "Acceron Group - Professional & Financial Advisory Services",
+  "private": true,
+  "scripts": {
+    "dev": "npx http-server",
+    "build": "echo 'Static site - no build needed'"
+  },
+  "keywords": [
+    "professional services",
+    "financial advisory",
+    "Melbourne",
+    "Australia",
+    "consulting"
+  ],
+  "author": "Acceron Group",
+  "license": "MIT"
+}
