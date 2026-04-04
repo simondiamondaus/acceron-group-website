@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | Acceron Group</title>
+<meta name="description" content="Built by people who've sat where you sit. Learn about Acceron's founding, leadership and the values driving professional advisory excellence.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Inter+Tight:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+
+<nav id="nav">
+  <div class="c nav-i">
+    <a href="/" class="nav-logo">
+      <span class="nav-logo-icon"><svg viewBox="0 0 36 36" fill="none"><path d="M4 18C4 10.27 10.27 4 18 4h3.6v10.8c0 7.73-6.27 14-14 14H4V18z" fill="url(#ng1)"/><path d="M32 18c0 7.73-6.27 14-14 14h-3.6V21.2c0-7.73 6.27-14 14-14H32V18z" fill="url(#ng2)"/><defs><linearGradient id="ng1" x1="4" y1="4" x2="25.6" y2="28.8"><stop stop-color="#2D9A3E"/><stop offset="1" stop-color="#3AB54A"/></linearGradient><linearGradient id="ng2" x1="14.4" y1="4" x2="32" y2="32"><stop stop-color="#006B3F"/><stop offset="1" stop-color="#2D9A3E"/></linearGradient></defs></svg></span>
+      <span class="nav-logo-sep"></span>Acceron
+    </a>
+    <div class="nav-r">
+      <div class="nav-item has-dd" data-mega="services">Services</div>
+      <div class="nav-item has-dd" data-mega="sectors">Sectors</div>
+      <a href="/#approach" class="nav-item">Approach</a>
+      <a href="/insights" class="nav-item">Insights</a>
+      <a href="/about" class="nav-item">About</a>
+      <a href="/contact" class="nav-cta-btn">Start a Conversation</a>
+    </div>
+    <div class="ham" id="ham" onclick="toggleNav()"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<div class="mega" id="mega-services">
+  <div class="mega-inner">
+    <div class="mega-head">
+      <div class="mega-title">Our Services</div>
+      <a href="/services" class="mega-all">View all 28 service lines â</a>
+    </div>
+    <div class="mega-grid">
+      <div class="mega-col">
+        <h4>Advisory & Capital</h4>
+        <a href="/services">Financial Advisory & Capital</a>
+        <a href="/services">Investment Advisory</a>
+        <a href="/services">Capital Brokering</a>
+        <a href="/services">Corporate Strategy</a>
+        <a href="/services">Business Advisory</a>
+        <a href="/services">Due Diligence</a>
+      </div>
+      <div class="mega-col">
+        <h4>CFO, Tax & Finance</h4>
+        <a href="/services">CFO Advisory</a>
+        <a href="/services">Tax & Structuring</a>
+        <a href="/services">Audit & Assurance</a>
+        <a href="/services">Accounting</a>
+        <a href="/services">Valuations</a>
+        <a href="/services">R&D Tax & Grants</a>
+        <a href="/services">Insolvency</a>
+      </div>
+      <div class="mega-col">
+        <h4>Lending & Insurance</h4>
+        <a href="/services">Mortgage Finance</a>
+        <a href="/services">Commercial Finance</a>
+        <a href="/services">Personal Lending</a>
+        <a href="/services">Property Development</a>
+        <a href="/services">Insurance Brokering</a>
+      </div>
+      <div class="mega-col">
+        <h4>Legal, Wealth & Corporate</h4>
+        <a href="/services">Legal Advisory</a>
+        <a href="/services">Corporate Services</a>
+        <a href="/services">Private Wealth</a>
+        <a href="/services">Succession Planning</a>
+        <a href="/services">Forensic & Litigation</a>
+        <a href="/services">Dispute Resolution</a>
+        <a href="/services">ESG & Sustainability</a>
+        <a href="/services">International</a>
+        <a href="/services">Technology & Digital</a>
+        <a href="/services">People & Workplace</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mega" id="mega-sectors">
+  <div class="mega-inner">
+    <div class="mega-head">
+      <div class="mega-title">Industries We Serve</div>
+      <a href="/sectors" class="mega-all">View all sectors â</a>
+    </div>
+    <div class="mega-sectors">
+      <a href="/sectors" class="mega-sector">Property & Real Estate</a>
+      <a href="/sectors" class="mega-sector">Construction & Infrastructure</a>
+      <a href="/sectors" class="mega-sector">Banking & Financial Services</a>
+      <a href="/sectors" class="mega-sector">Technology & High Growth</a>
+      <a href="/sectors" class="mega-sector">Healthcare & Life Sciences</a>
+      <a href="/sectors" class="mega-sector">Energy & Resources</a>
+      <a href="/sectors" class="mega-sector">Manufacturing & Industrial</a>
+      <a href="/sectors" class="mega-sector">Professional Services</a>
+      <a href="/sectors" class="mega-sector">Consumer & Retail</a>
+      <a href="/sectors" class="mega-sector">Hospitality & Tourism</a>
+      <a href="/sectors" class="mega-sector">Education</a>
+      <a href="/sectors" class="mega-sector">Agriculture</a>
+      <a href="/sectors" class="mega-sector">Government & Public Sector</a>
+      <a href="/sectors" class="mega-sector">Not-for-Profit</a>
+      <a href="/sectors" class="mega-sector">Media & Entertainment</a>
+      <a href="/sectors" class="mega-sector">Transport & Logistics</a>
+    </div>
+  </div>
+</div>
+
+<div class="mob-nav" id="mnav">
+  <a href="/services" onclick="closeNav()">Services</a>
+  <a href="/sectors" onclick="closeNav()">Sectors</a>
+  <a href="/#approach" onclick="closeNav()">Approach</a>
+  <a href="/insights" onclick="closeNav()">Insights</a>
+  <a href="/about" onclick="closeNav()">About</a>
+  <a href="/contact" onclick="closeNav()" style="color:var(--g1)">Start a Conversation</a>
+</div>
+
+<section class="hero" style="padding-top:140px;padding-bottom:clamp(60px,10vh,100px)">
+  <div class="c hero-grid">
+    <div>
+      <h1>
+        <span class="line"><span>Built by people</span></span>
+        <span class="line"><span>who've sat <span class="hero-accent">where you sit.</span></span></span>
+      </h1>
+      <p class="hero-sub">We understand complexity because we've navigated it. We know what matters because we've lived it. And we're driven by the conviction that excellence in advisory is still possible in an industry that's lost its way.</p>
+    </div>
+    <div class="hero-right">
+      <div class="hero-meta">
+        Founded 2018<br>
+        <span style="display:block;margin-top:4px;font-size:.78rem;color:var(--w3)">Melbourne, Australia</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--d2)">
+  <div class="c">
+    <div style="margin-bottom:clamp(64px,8vw,100px)">
+      <h2 class="rv">Our Story</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center">
+      <div class="rv">
+        <p style="font-size:.95rem;color:var(--w5);line-height:2;margin-bottom:24px">Acceron Group was founded by people who spent fifteen years inside Big 4 professional services. We delivered excellence for large corporations, but saw something missing: firms willing to bring institutional rigour to private businesses.</p>
+        <p style="font-size:.95rem;color:var(--w5);line-height:2;margin-bottom:24px">We knew businesses that were worth hundreds of millions didn't have access to the same caliber of CFO leadership, capital markets expertise, and strategic advice as ASX-listed companies. That gap haunted us.</p>
+        <p style="font-size:.95rem;color:var(--w5);line-height:2">So we built Acceron â a firm where founders, investors and private clients get partner-level expertise without the corporate machinery. Where speed, clarity and genuine partnership are defaults, not exceptions.</p>
+      </div>
+      <div class="rv rv-d1">
+        <div style="background:linear-gradient(135deg,rgba(58,181,74,.1),rgba(0,107,63,.1));padding:60px 40px;border-radius:16px;border:1px solid var(--w1);text-align:center">
+          <div style="font-size:2.2rem;font-weight:600;color:var(--g1);margin-bottom:8px;font-family:var(--ft)">$2B+</div>
+          <div style="font-size:.85rem;color:var(--w3);margin-bottom:32px;font-weight:500">Transaction value advised</div>
+          <hr style="border:none;height:1px;background:var(--w05);margin:32px 0">
+          <div style="font-size:2.2rem;font-weight:600;color:var(--g1);margin-bottom:8px;font-family:var(--ft)">500+</div>
+          <div style="font-size:.85rem;color:var(--w3);margin-bottom:32px;font-weight:500">Clients across Australia</div>
+          <hr style="border:none;height:1px;background:var(--w05);margin:32px 0">
+          <div style="font-size:2.2rem;font-weight:600;color:var(--g1);margin-bottom:8px;font-family:var(--ft)">28</div>
+          <div style="font-size:.85rem;color:var(--w3);font-weight:500">Integrated service lines</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="c">
+    <div style="margin-bottom:clamp(64px,8vw,100px)">
+      <h2 class="rv">Leadership</h2>
+      <p style="font-size:.95rem;color:var(--w5);max-width:560px;margin-top:16px;line-height:1.8" class="rv rv-d1">Led by professionals with deep experience inside top-tier advisory firms and direct investment in major transactions.</p>
+    </div>
+    <div class="service-grid">
+      <div class="grid-card rv">
+        <h3>Akbar Shah</h3>
+        <p style="color:var(--g1);font-weight:500;margin-bottom:16px">Founder & Managing Director</p>
+        <p>Former senior partner at top-tier advisory firm with 15+ years in transaction advisory, capital markets and CFO services. Led over $400M in successful transactions across technology, healthcare and professional services.</p>
+      </div>
+      <div class="grid-card rv rv-d1">
+        <h3>Sarah Chen</h3>
+        <p style="color:var(--g1);font-weight:500;margin-bottom:16px">Head of Tax & Structuring</p>
+        <p>Former Big 4 tax partner with 12+ years advising high-net-worth individuals, family offices and growth businesses on tax strategy, structuring and succession planning.</p>
+      </div>
+      <div class="grid-card rv rv-d2">
+        <h3>James Mitchell</h3>
+        <p style="color:var(--g1);font-weight:500;margin-bottom:16px">Head of Capital Markets</p>
+        <p>Investment banker and capital advisor with 14+ years in debt and equity financing for mid-market companies. Deep relationships with financial institutions and investor networks.</p>
+      </div>
+      <div class="grid-card rv rv-d3">
+        <h3>Dr. Emma Rodriguez</h3>
+        <p style="color:var(--g1);font-weight:500;margin-bottom:16px">Head of Technology & Transformation</p>
+        <p>Strategy consultant and digital transformation leader with expertise in finance systems, data analytics and business process optimization for scaling organizations.</p>
+      </div>
+      <div class="grid-card rv rv-d4">
+        <h3>Michael Thompson</h3>
+        <p style="color:var(--g1);font-weight:500;margin-bottom:16px">Head of Legal & Corporate</p>
+        <p>Corporate lawyer and governance advisor with 13+ years in commercial law, M&A documentation and corporate regulatory compliance.</p>
+      </div>
+      <div class="grid-card rv rv-d5">
+        <h3>Lisa Zhang</h3>
+        <p style="color:var(--g1);font-weight:500;margin-bottom:16px">Head of Client Experience</p>
+        <p>Former professional services client director, ensuring seamless engagement, exceptional delivery and long-term relationship success for every client.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--cr);color:var(--d)">
+  <div class="c">
+    <div style="margin-bottom:clamp(64px,8vw,100px)">
+      <h2 class="rv" style="color:var(--d)">Our Values</h2>
+      <p style="font-size:.95rem;color:var(--b5);max-width:560px;margin-top:16px;line-height:1.8" class="rv rv-d1">What we stand for. How we work. Why people stay.</p>
+    </div>
+    <div class="service-grid" style="--color:var(--d)">
+      <div class="rv" style="background:var(--w);padding:clamp(32px,3.5vw,48px);border-radius:12px">
+        <h3 style="color:var(--d);margin-bottom:12px">Excellence Without Arrogance</h3>
+        <p style="color:var(--b5);font-size:.88rem;line-height:1.7">We bring institutional rigour and deep expertise without the hierarchy. Partners work alongside clients, not above them.</p>
+      </div>
+      <div class="rv rv-d1" style="background:var(--w);padding:clamp(32px,3.5vw,48px);border-radius:12px">
+        <h3 style="color:var(--d);margin-bottom:12px">Speed & Clarity</h3>
+        <p style="color:var(--b5);font-size:.88rem;line-height:1.7">Complex advice delivered simply. We strip out jargon, commit to timelines and communicate with precision.</p>
+      </div>
+      <div class="rv rv-d2" style="background:var(--w);padding:clamp(32px,3.5vw,48px);border-radius:12px">
+        <h3 style="color:var(--d);margin-bottom:12px">Genuine Partnership</h3>
+        <p style="color:var(--b5);font-size:.88rem;line-height:1.7">We succeed when you succeed. We stay invested in outcomes, not transactions. Our incentives align with yours.</p>
+      </div>
+      <div class="rv rv-d3" style="background:var(--w);padding:clamp(32px,3.5vw,48px);border-radius:12px">
+        <h3 style="color:var(--d);margin-bottom:12px">Intellectual Honesty</h3>
+        <p style="color:var(--b5);font-size:.88rem;line-height:1.7">We tell you what we think, not what you want to hear. Difficult conversations happen early, not in the aftermath.</p>
+      </div>
+      <div class="rv rv-d4" style="background:var(--w);padding:clamp(32px,3.5vw,48px);border-radius:12px">
+        <h3 style="color:var(--d);margin-bottom:12px">Private Focus</h3>
+        <p style="color:var(--b5);font-size:.88rem;line-height:1.7">We understand private business challenges differently. We bring that distinct perspective to every engagement.</p>
+      </div>
+      <div class="rv rv-d5" style="background:var(--w);padding:clamp(32px,3.5vw,48px);border-radius:12px">
+        <h3 style="color:var(--d);margin-bottom:12px">Long-Term Thinking</h3>
+        <p style="color:var(--b5);font-size:.88rem;line-height:1.7">We plan for the phase after next. Advisory isn't a transaction for us â it's the beginning of an ongoing partnership.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta" style="background:var(--d2)">
+  <div class="cta-inner">
+    <h2 class="rv">Ready to work with us?</h2>
+    <p class="rv rv-d1">Let's start a conversation about what's ahead for your business or investment portfolio.</p>
+    <div class="cta-btns rv rv-d2">
+      <a href="/contact" class="btn btn-g">Schedule a Discussion</a>
+      <a href="/services" class="btn btn-o">Explore Our Services</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="c">
+    <div class="ft-top">
+      <div>
+        <div style="font-family:var(--ft);font-size:1.1rem;font-weight:300;letter-spacing:.01em">Acceron</div>
+        <p class="ft-brand-p">Professional and financial advisory. Institutional rigour. Private focus. Serving businesses, investors and private clients across Australia.</p>
+        <div class="ft-soc">
+          <a href="#" title="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zm-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.39v-1.2h-2.5v8.5h2.5v-4.34c0-.77.62-1.4 1.4-1.4a1.4 1.4 0 011.4 1.4v4.34h2.5zM6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.68-1.68-1.68a1.69 1.69 0 00-1.69 1.68c0 .93.76 1.68 1.69 1.68zm1.39 9.94v-8.5H5.5v8.5h2.77z"/></svg></a>
+          <a href="#" title="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2s9 5 20 5a9.5 9.5 0 00-9-5.5c4.75 2.25 10-5 10-5s-3 1.5-7 1.5z"/></svg></a>
+        </div>
+      </div>
+      <div class="ft-col">
+        <h4>Services</h4>
+        <a href="/services">All Services</a>
+        <a href="/services">Advisory & Capital</a>
+        <a href="/services">CFO & Finance</a>
+        <a href="/services">Lending & Insurance</a>
+        <a href="/services">Legal & Wealth</a>
+      </div>
+      <div class="ft-col">
+        <h4>Industries</h4>
+        <a href="/sectors">All Sectors</a>
+        <a href="/sectors">Property & Real Estate</a>
+        <a href="/sectors">Technology</a>
+        <a href="/sectors">Healthcare</a>
+        <a href="/sectors">Financial Services</a>
+      </div>
+      <div class="ft-col">
+        <h4>Company</h4>
+        <a href="/about">About Us</a>
+        <a href="/insights">Insights</a>
+        <a href="/contact">Contact</a>
+        <a href="#">Careers</a>
+        <a href="#">Privacy</a>
+      </div>
+      <div class="ft-col">
+        <h4>Get in Touch</h4>
+        <a href="tel:+61399999999">+61 3 9999 9999</a>
+        <a href="mailto:hello@acceron.com.au">hello@acceron.com.au</a>
+        <p style="font-size:.78rem;color:var(--w3);margin-top:12px">Acceron Group<br>Melbourne, Australia</p>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <span>&copy; 2026 Acceron Group. All rights reserved.</span>
+      <div class="ft-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Disclaimer</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+</body>
+</html>
