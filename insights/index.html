@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insights | Acceron Group</title>
+<meta name="description" content="Strategic thinking on capital markets, tax, finance, transactions and the challenges facing growing businesses and private investors.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Inter+Tight:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+
+<nav id="nav">
+  <div class="c nav-i">
+    <a href="/" class="nav-logo">
+      <span class="nav-logo-icon"><svg viewBox="0 0 36 36" fill="none"><path d="M4 18C4 10.27 10.27 4 18 4h3.6v10.8c0 7.73-6.27 14-14 14H4V18z" fill="url(#ng1)"/><path d="M32 18c0 7.73-6.27 4-14 14h-3.6V21.2c0-7.73 6.27-14 14-14H32V18z" fill="url(#ng2)"/><defs><linearGradient id="ng1" x1="4" y1="4" x2="25.6" y2="28.8"><stop stop-color="#2D9A3E"/><stop offset="1" stop-color="#3AB54A"/></linearGradient><linearGradient id="ng2" x1="14.4" y1="4" x2="32" y2="32"><stop stop-color="#006B3F"/><stop offset="1" stop-color="#2D9A3E"/></linearGradient></defs></svg></span>
+      <span class="nav-logo-sep"></span>Acceron
+    </a>
+    <div class="nav-r">
+      <div class="nav-item has-dd" data-mega="services">Services</div>
+      <div class="nav-item has-dd" data-mega="sectors">Sectors</div>
+      <a href="/#approach" class="nav-item">Approach</a>
+      <a href="/insights" class="nav-item">Insights</a>
+      <a href="/about" class="nav-item">About</a>
+      <a href="/contact" class="nav-cta-btn">Start a Conversation</a>
+    </div>
+    <div class="ham" id="ham" onclick="toggleNav()"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<div class="mega" id="mega-services">
+  <div class="mega-inner">
+    <div class="mega-head">
+      <div class="mega-title">Our Services</div>
+      <a href="/services" class="mega-all">View all 28 service lines â</a>
+    </div>
+    <div class="mega-grid">
+      <div class="mega-col">
+        <h4>Advisory & Capital</h4>
+        <a href="/services">Financial Advisory & Capital</a>
+        <a href="/services">Investment Advisory</a>
+        <a href="/services">Capital Brokering</a>
+        <a href="/services">Corporate Strategy</a>
+        <a href="/services">Business Advisory</a>
+        <a href="/services">Due Diligence</a>
+      </div>
+      <div class="mega-col">
+        <h4>CFO, Tax & Finance</h4>
+        <a href="/services">CFO Advisory</a>
+        <a href="/services">Tax & Structuring</a>
+        <a href="/services">Audit & Assurance</a>
+        <a href="/services">Accounting</a>
+        <a href="/services">Valuations</a>
+        <a href="/services">R&D Tax & Grants</a>
+        <a href="/services">Insolvency</a>
+      </div>
+      <div class="mega-col">
+        <h4>Lending & Insurance</h4>
+        <a href="/services">Mortgage Finance</a>
+        <a href="/services">Commercial Finance</a>
+        <a href="/services">Personal Lending</a>
+        <a href="/services">Property Development</a>
+        <a href="/services">Insurance Brokering</a>
+      </div>
+      <div class="mega-col">
+        <h4>Legal, Wealth & Corporate</h4>
+        <a href="/services">Legal Advisory</a>
+        <a href="/services">Corporate Services</a>
+        <a href="/services">Private Wealth</a>
+        <a href="/services">Succession Planning</a>
+        <a href="/services">Forensic & Litigation</a>
+        <a href="/services">Dispute Resolution</a>
+        <a href="/services">ESG & Sustainability</a>
+        <a href="/services">International</a>
+        <a href="/services">Technology & Digital</a>
+        <a href="/services">People & Workplace</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mega" id="mega-sectors">
+  <div class="mega-inner">
+    <div class="mega-head">
+      <div class="mega-title">Industries We Serve</div>
+      <a href="/sectors" class="mega-all">View all sectors â</a>
+    </div>
+    <div class="mega-sectors">
+      <a href="/sectors" class="mega-sector">Property & Real Estate</a>
+      <a href="/sectors" class="mega-sector">Construction & Infrastructure</a>
+      <a href="/sectors" class="mega-sector">Banking & Financial Services</a>
+      <a href="/sectors" class="mega-sector">Technology & High Growth</a>
+      <a href="/sectors" class="mega-sector">Healthcare & Life Sciences</a>
+      <a href="/sectors" class="mega-sector">Energy & Resources</a>
+      <a href="/sectors" class="mega-sector">Manufacturing & Industrial</a>
+      <a href="/sectors" class="mega-sector">Professional Services</a>
+      <a href="/sectors" class="mega-sector">Consumer & Retail</a>
+      <a href="/sectors" class="mega-sector">Hospitality & Tourism</a>
+      <a href="/sectors" class="mega-sector">Education</a>
+      <a href="/sectors" class="mega-sector">Agriculture</a>
+      <a href="/sectors" class="mega-sector">Government & Public Sector</a>
+      <a href="/sectors" class="mega-sector">Not-for-Profit</a>
+      <a href="/sectors" class="mega-sector">Media & Entertainment</a>
+      <a href="/sectors" class="mega-sector">Transport & Logistics</a>
+    </div>
+  </div>
+</div>
+
+<div class="mob-nav" id="mnav">
+  <a href="/services" onclick="closeNav()">Services</a>
+  <a href="/sectors" onclick="closeNav()">Sectors</a>
+  <a href="/#approach" onclick="closeNav()">Approach</a>
+  <a href="/insights" onclick="closeNav()">Insights</a>
+  <a href="/about" onclick="closeNav()">About</a>
+  <a href="/contact" onclick="closeNav()" style="color:var(--g1)">Start a Conversation</a>
+</div>
+
+<section class="hero" style="padding-top:140px;padding-bottom:clamp(60px,10vh,100px)">
+  <div class="c hero-grid">
+    <div>
+      <h1>
+        <span class="line"><span>Thinking.</sspan></span>
+      </h1>
+      <p class="hero-sub">Strategic insights on capital, strategy, tax, transactions and the challenges facing growing businesses and private investors across Australia.</p>
+    </div>
+    <div class="hero-right">
+      <div class="hero-meta">
+        Insights<br>
+        <span style="display:block;margin-top:4px;font-size:.78rem;color:var(--w3)">Strategic perspectives</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--d2)">
+  <div class="c">
+    <div class="insights-grid">
+      <a href="#" class="ins-feat rv" style="background:var(--d3);padding:clamp(36px,4vw,56px);border:1px solid var(--w05);display:flex;flex-direction:column;justify-content:flex-end;min-height:380px;transition:all .4s;position:relative;overflow:hidden;border-radius:8px">
+        <div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(8,12,10,.6));pointer-events:none"></div>
+        <div style="position:relative;z-index:1">
+          <div style="font-size:.6rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--g1);margin-bottom:16px">Capital & Transactions</div>
+          <div style="font-family:var(--ft);font-size:clamp(1.3rem,2vw,1.7rem);font-weight:300;line-height:1.3;margin-bottom:16px;letter-spacing:-.02em">The 90-Day Capital Raise Preparation Framework Every Founder Needs</div>
+          <div style="font-size:.88rem;line-height:1.65;color:var(--w5);font-weight:300;margin-bottom:24px">Most capital raises fail before they begin â not because the business isn't ready, but because the financial narrative isn't. Here's how to close that gap.</div>
+          <div style="font-size:.7rem;color:var(--w3);letter-spacing:.08em;font-weight:500">March 2026 Â· 8 min read</div>
+        </div>
+      </a>
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <a href="#" class="ins-item rv" style="background:var(--d3);padding:clamp(28px,3vw,40px);border:1px solid var(--w05);flex:1;display:flex;flex-direction:column;justify-content:center;transition:all .4s;border-radius:8px">
+          <div style="font-size:.6rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--g1);margin-bottom:8px">Tax & Structuring</div>
+          <div style="font-family:var(--ft);font-size:clamp(1rem,1.3vw,1.15rem);font-weight:300;line-height:1.3;margin-bottom:8px;letter-spacing:-.02em">The Family Trust Tax Reality Check: What's Changing in 2026</div>
+          <div style="font-size:.82rem;color:var(--w3)">February 2026 Â· 6 min read</div>
+        </a>
+        <a href="#" class="ins-item rv rv-d1" style="background:var(--d3);padding:clamp(28px,3vw,40px);border:1px solid var(--w05);flex:1;display:flex;flex-direction:column;justify-content:center;transition:all .4s;border-radius:8px">
+          <div style="font-size:.6rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--g1);margin-bottom:8px">CFO & Finance</div>
+          <div style="font-family:var(--ft);font-size:clamp(1rem,1.3vw,1.15rem);font-weight:300;line-height:1.3;margin-bottom:8px;letter-spacing:-.02em">Building CFO Capability: From Outsourcing to In-House Leadership</div>
+          <div style="font-size:.82rem;color:var(--w3)">February 2026 Â· 10 min read</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="c">
+    <div style="margin-bottom:clamp(48px,6vw,80px)">
+      <h2 class="rv">All Articles</h2>
+    </div>
+    <div class="insights-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px">
+      <a href="#" class="grid-card rv">
+        <div style="font-size:.6rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--g1);margin-bottom:12px">M&A Strategy</div>
+        <h3>Post-Acquisition Integration: The First 100 Days Matter Most</h3>
+        <p>Why most acquisitions stumble in the integration phase, and what successful buyers do differently from day one.</p>
+        <div class="grid-card-meta">February 2026 Â· 9 min read</div>
+      </a>
+      <a href="#" class="grid-card rv rv-d1">
+        <div style="font-size:.6rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--g1);margin-bottom:12px">Lending & Finance</div>
+        <h3>Commercial Lending: What Banks Really Want to See in Your Application</h3>
+        <p>Banks have changed their lending criteria. Here's what financiers assess now, and how to position your business for approval.</p>
+        <div class="grid-card-meta">February 2026 Â· 7 min read</div>
+      </a>
+      <a href="#" class="grid-card rv rv-d2">
+        <div style="font-size:.6rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--g1);margin-bottom:12px">Technology & Systems</div>
+        <h3>Finance Systems: When to Upgrade and What to Implement First</h3>
+        <p>Technology is changing how finance teams operate. A roadmap for implementing systems that actually improve your business.</p>
+        <div class="grid-card-meta">January 2026 Â· 12 min read</div>
+      </a>
+      <a href="#" class="grid-card rv rv-d3">
+        <div style="font-size:.6rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--g1);margin-bottom:12px">Succession Planning</div>
+        <h3>Business Succession: Why You Should Plan Five Years Before You Leave</h3>
+        <p>The difference between a successful exit and a scramble at the last minute starts years earlier with proper planning.</p>
+        <div class="grid-card-meta">January 2026 Â· 11 min read</div>
+      </a>
+      <a href="#" class="grid-card rv rv-d4">
+        <div style="font-size:.6rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--g1);margin-bottom:12px">Growth Strategy</div>
+        <h3>Scaling Without Breaking: The Cash Flow Reality of Growth</h3>
+        <p>Why growing businesses run out of cash even when they're profitable, and how to plan for the working capital demands of scale.</p>
+        <div class="grid-card-meta">January 2026 Â· 8 min read</div>
+      </a>
+      <a href="#" class="grid-card rv rv-d5">
+        <div style="font-size:.6rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--g1);margin-bottom:12px">Tax Optimization</div>
+        <h3>Retained Earnings: The Tax Trap Most Growing Businesses Miss</h3>
+        <p>Understanding when to distribute profits and when to retain them can save you hundreds of thousands in tax over time.</p>
+        <div class="grid-card-meta">December 2025 Â· 6 min read</div>
+      </a>
+      <a href="#" class="grid-card rv">
+        <div style="font-size:.6rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--g1);margin-bottom:12px">Private Wealth</div>
+        <h3>Wealth Beyond the Business: Building Your Family Office at $20M+ Net Worth</h3>
+        <p>When business success leads to personal wealth, the dynamics change. Here's how sophisticated families structure their assets.</p>
+        <div class="grid-card-meta">December 2025 Â· 10 min read</div>
+      </a>
+      <a href="#" class="grid-card rv rv-d1">
+        <div style="font-size:.6rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--g1);margin-bottom:12px">Capital Structure</div>
+        <h3>Debt or Equity? Choosing the Right Capital for Your Situation</h3>
+        <p>The decision between debt and equity isn't just financial â it shapes your strategic flexibility, control and exit options.</p>
+        <div class="grid-card-meta">December 2025 Â· 9 min read</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="cta" style="background:var(--d2)">
+  <div class="cta-inner">
+    <h2 class="rv">Ready to discuss your situation?</h2>
+    <p class="rv rv-d1">Let's talk about the specific challenges and opportunities facing your business or investment portfolio.</p>
+    <div class="cta-btns rv rv-d2">
+      <a href="/contact" class="btn btn-g">Start a Conversation</a>
+      <a href="/services" class="btn btn-o">Explore Our Services</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="c">
+    <div class="ft-top">
+      <div>
+        <div style="font-family:var(--ft);font-size:1.1rem;font-weight:300;letter-spacing:.01em">Acceron</div>
+        <p class="ft-brand-p">Professional and financial advisory. Institutional rigour. Private focus. Serving businesses, investors and private clients across Australia.</p>
+        <div class="ft-soc">
+          <a href="#" title="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zm-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.39v-1.2h-2.5v8.5h2.5v-4.34c0-.77.62-1.4 1.4-1.4a1.4 1.4 0 011.4 1.4v4.34h2.5zM6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.68-1.68-1.68a1.69 1.69 0 00-1.69 1.68c0 .93.76 1.68 1.69 1.68zm1.39 9.94v-8.5H5.5v8.5h2.77z"/></svg></a>
+          <a href="#" title="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2s9 5 20 5a9.5 9.5 0 00-9-5.5c4.75 2.25 10-5 10-5s-3 1.5-7 1.5z"/></svg></a>
+        </div>
+      </div>
+      <div class="ft-col">
+        <h4>Services</h4>
+        <a href="/services">All Services</a>
+        <a href="/services">Advisory & Capital</a>
+        <a href="/services">CFO & Finance</a>
+        <a href="/services">Lending & Insurance</a>
+        <a href="/services">Legal & Wealth</a>
+      </div>
+      <div class="ft-col">
+        <h4>Industries</h4>
+        <a href="/sectors">All Sectors</a>
+        <a href="/sectors">Property & Real Estate</a>
+        <a href="/sectors">Technology</a>
+        <a href="/sectors">Healthcare</a>
+        <a href="/sectors">Financial Services</a>
+      </div>
+      <div class="ft-col">
+        <h4>Company</h4>
+        <a href="/about">About Us</a>
+        <a href="/insights">Insights</a>
+        <a href="/contact">Contact</a>
+        <a href="#">Careers</a>
+        <a href="#">Privacy</a>
+      </div>
+      <div class="ft-col">
+        <h4>Get in Touch</h4>
+        <a href="tel:+61399999999">+61 3 9999 9999</a>
+        <a href="mailto:hello@acceron.com.au">hello@acceron.com.au</a>
+        <p style="font-size:.78rem;color:var(--w3);margin-top:12px">Acceron Group<br>Melbourne, Australia</p>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <span>&copy; 2026 Acceron Group. All rights reserved.</span>
+      <div class="ft-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Disclaimer</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+</body>
+</html>
